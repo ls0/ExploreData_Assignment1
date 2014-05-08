@@ -10,7 +10,7 @@ hpc <- read.csv2.sql("household_power_consumption.txt",
   # with rest of the data. 
 DateTime <- as.character(paste0(hpc$Date, " ", hpc$Time))
 d <- cbind(DateTime, select(hpc, -Time, -Date))
-  ## Plot "plot3.png"
+  ## Plot "plot3.png".
 png(filename="plot3.png",width=480,height=480, type = c("windows"))
 par(mfrow=c(1,1))
 plot(as.numeric(d$Sub_metering_1)~d$DateTime, xaxt="n", type = "l", ylab = "Energy sub metering", xlab = "")
