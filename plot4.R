@@ -1,4 +1,4 @@
- ## Plot 4 
+ ## R script for Plot 4. 
 library("sqldf")
 library(dplyr)
   # SQL file used to read data.
