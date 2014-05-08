@@ -10,7 +10,7 @@ hpc <- read.csv2.sql("household_power_consumption.txt",
   # with rest of the data. 
 DateTime <- as.character(paste0(hpc$Date, " ", hpc$Time))
 d <- cbind(DateTime, select(hpc, -Time, -Date))
- ## Plot "plot4.png"
+ ## Plot "plot4.png".
     # Global_active_power
 library(grDevices)
 png(filename="plot4.png",width=480,height=480, type = c("windows"))
