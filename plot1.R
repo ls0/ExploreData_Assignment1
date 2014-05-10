@@ -6,16 +6,16 @@
   # user   system   elapsed 
   # 14.44    1.83   1577.91 
   # Computer system: Windows 8.1, 3.6 GHz, 8 GB RAM, with Rstudio 0.98.501.  
-# A write and read script is below, which saves time for all other evaluations.
+  # A write and read script is below, which saves time for all other evaluations.
 library("sqldf")
 hpc <- read.csv2.sql("household_power_consumption.txt",
                      sql = "select * from file where Date = '1/2/2007' or Date = '2/2/2007'")
-## Combine date and time and convert into character class and then combind
-# with rest of the data. 
+ ## Combine date and time and convert into character class and then combind
+  # with rest of the data. 
 library(dplyr)
 DateTime <- as.character(paste0(hpc$Date, " ", hpc$Time))
 d <- cbind(DateTime, select(hpc, -Time, -Date))
-## Convert factor into numeric data.
+ ## Convert factor into numeric data.
 c <- as.numeric(as.character(d$Global_active_power))
  ## Plot "plot1.png".
 png(file="plot1.png",width=480,height=480)
