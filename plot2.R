@@ -22,3 +22,14 @@ dev.off()
   # This is a time saver for additional plots.
 write.table(d, file = "hpcData.csv", sep = ",")
 d <- read.csv("hpcData.csv")
+############################################
+ # Code and code inspiration came from numerous sources, including several Coursera courses that teach R. Additionally, package information available in R was extensively used. Other sources are specifically listed in references.
+### References
+  # 1. R Cookbook, by Paul Teetor, O’Reilly Media, March 2011, 436 pages.
+  # 2. R Graphics Cookbook, by Winston Chang, O’Reilly Media, Inc., December 2012, 416 pages
+  # 3. R in Action: Data Analysis and Graphics With R, by Robert Kabacoff, Manning Publications Company, 2011, 447 pages.
+  # 4. Quick-R, <http://www.statmethods.net/>
+  # 5. Stack Overflow, <http://stackoverflow.com/>
+  # 6. Introduction to dplyr, <http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html>
+  # 7. How dplyr replaced my most common R idioms, <http://www.statsblogs.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/>
+  # 8. Tidy Data, by Hadley Wickham, <http://vita.had.co.nz/papers/tidy-data.pdf>
